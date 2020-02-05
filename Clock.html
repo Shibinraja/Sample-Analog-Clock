@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="Clock.css" />
+    <script src="Clock.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3 col-xl-3">
+                <div class="clock">
+                    <div class=" mid-circle"></div>
+                    <div class="Hour Hand" id="Hour-Hand"></div>
+                    <div class="Minute Hand" id="Minute-Hand"></div>
+                    <div class="Second Hand" id="Second-Hand"></div>
+                    <div class="number number1">1</div>
+                    <div class="number number2">2</div>
+                    <div class="number number3">3</div>
+                    <div class="number number4">4</div>
+                    <div class="number number5">5</div>
+                    <div class="number number6">6</div>
+                    <div class="number number7">7</div>
+                    <div class="number number8">8</div>
+                    <div class="number number9">9</div>
+                    <div class="number number10">10</div>
+                    <div class="number number11">11</div>
+                    <div class="number number12">12</div>
+                </div>
+            </div>
+
+
+            <div class="col-md-3 col-xl-3">
+                <h3 class="text-primary" style="color:black">Digital-Timer</h3>
+                <button class="btn btn-success" id="start" onclick="startTime()">START</button> <button
+                    class="btn btn-danger" id="stop" value="" onclick="stopTime()">STOP</button> <button
+                    class="btn btn-warning" id="reset" onclick="resetTime()">RESET</button>
+                <br /><br /><br />
+                <label for="appt" style="font-size:25px">Set Timer</label>
+                <input type="text" id="appt" style="font-size:25px; background-color:black; color:white ; width:100px;"
+                    value="08:00" name="appt">
+                <br /><br /><br />
+                <center><input type="text" id="timer" value=""
+                        style="font-size:25px; background-color:black; color:white ; width:210px; margin-right:150px; padding-left:30px; border:5px SOLID purple;"></input>
+                </center>
+            </div>
+
+            <div class="col-md-3 col-xl-3">
+                <h3 class="text-primary" style="color:black">Stop-Watch</h3>
+
+                <button class="btn btn-success" id="start1" onclick="startwatch()">START</button> <button
+                    class="btn btn-danger" id="stop1" value="" onclick="stopwatch()">STOP</button> <button
+                    class="btn btn-warning" id="reset1" onclick="resetTime()">RESET</button>
+
+                <br /><br /><br />
+
+                <h1 id="stop-time" class="ml-4">00:00:00</h1>
+                <!-- <label for="appt" style="font-size:25px">Set Timer</label>
+                <input type="text" id="appt" style="font-size:25px; background-color:black; color:white ; width:100px;" value="08:00" name="appt">
+                <br/><br/><br/> -->
+
+            </div>
+
+
+
+        </div>
+    </div>
+    </div>
+
+
+</body>
+
+</html>
